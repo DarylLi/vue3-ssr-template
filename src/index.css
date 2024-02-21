@@ -1,0 +1,34 @@
+body{
+	background: #fbe2f0;
+}
+.mika-nav{
+	cursor: pointer;
+	color: #fff;
+}
+.mainNav a{
+	text-decoration: none;
+}
+.mainNav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 200px;
+	margin: 0 auto;
+}
+.router-link-active .mika-nav{
+	color: #d6e0f9;
+}
+button{
+	background: #fff;
+	color: #fbe2f0;
+	border: 0px;
+}
+h1,h2{
+	color: #fff;
+}
+.app{
+	padding: 20px;
+}
+div{
+	color: #D6E0F9;
+}

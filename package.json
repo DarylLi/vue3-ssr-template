@@ -1,0 +1,39 @@
+{
+  "name": "mika-vue-ssr",
+  "version": "1.0.0",
+  "description": "vue3 server side render",
+  "main": "index.js",
+  "type": "node",
+  "scripts": {
+    "start": "nodemon ./build/server/server_bundle.js",
+    "start:koa": "node main.js",
+    "build:server": "webpack --config ./config/server.config.js",
+    "build:client": "webpack --config ./config/client.config.js",
+	"reupdate": "webpack --config ./config/server.config.js & webpack --config ./config/client.config.js & nodemon ./build/server/server_bundle.js"
+  },
+  "author": "daryl",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.23.9",
+    "axios": "^1.6.7",
+    "css-loader": "^6.10.0",
+    "pinia": "^2.1.7",
+    "style-loader": "^3.3.4",
+    "vue": "^3.4.19",
+    "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.23.9",
+    "babel-loader": "^9.1.3",
+    "express": "^4.18.2",
+    "http": "^0.0.1-security",
+    "koa": "^2.15.0",
+    "koa-router": "^12.0.1",
+    "nodemon": "^3.0.3",
+    "vue-loader": "^17.4.2",
+    "vue-server-renderer": "^2.7.16",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
